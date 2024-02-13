@@ -1,3 +1,18 @@
+# Instalar npm o pnpm 
+
+https://pnpm.io/es/installation
+
+Abrir la terminal (puede ser la integrada en vscode) y ejecutar:
+
+### Instalar dependencias:
+```pnpm install```
+
+y posteriormente
+
+### Ejecutar el proyecto:
+```pnpm run dev```
+
+
 # Astro Starter Kit: Basics
 
 ```sh
