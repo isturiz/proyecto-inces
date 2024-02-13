@@ -1,0 +1,71 @@
+---
+const currentYear = new Date().getFullYear()
+---
+
+<footer class='bg-red-500 p-6 text-white md:p-12 lg:p-20'>
+  <div
+    class='mx-auto grid max-w-7xl grid-flow-row justify-items-center gap-y-8 md:grid-flow-col md:grid-cols-2'
+  >
+    <!-- section 1 -->
+    <div class='col-span-1 md:justify-self-start'>
+      <div class='flex flex-col gap-8'>
+        <img
+          src='/logo.png'
+          alt='Logo'
+          class='mx-auto w-32 md:mx-0 filter grayscale'
+        />
+        <p class='text-pretty text-center md:text-start'>
+          <b class='text-balance font-semibold'>Proyecto INCES</b>
+          <br />
+          Proyecto respectivo a lo realizado en el primer periodo.
+        </p>
+      </div>
+    </div>
+
+      <!-- <div class="flex flex-row"> -->
+
+      <div class='col-span-1'>
+        <div class='flex justify-center gap-2'>
+          <svg
+          class="-mt-2"
+            width='48'
+            height='48'
+            viewBox='0 0 24 24'
+            stroke-width='1.5'
+            stroke='currentColor'
+            fill='none'
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            ><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path
+              d='M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0'></path><path
+              d='M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1'></path><path
+              d='M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0'></path><path
+              d='M17 10h2a2 2 0 0 1 2 2v1'></path><path
+              d='M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0'></path><path
+              d='M3 13v-1a2 2 0 0 1 2 -2h2'></path></svg
+          >
+          <div class='flex flex-col gap-1'>
+            <div class='mb-3 flex flex-col'>
+              <span class='font-bold text-orange-boom'>Desarrollado por:</span>
+            </div>
+
+            <p>Yeison Carreño</p>
+            <p>Manuel Caruci</p>
+            <p>Jose Piña</p>
+            <p>Antony Rojas</p>
+            <p>Félix Campos</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <hr class='my-4 w-full border-red-900' />
+  <div
+    class='mx-auto grid max-w-7xl grid-flow-row justify-items-center gap-y-8 md:grid-flow-col md:grid-cols-3'
+  >
+    <div class='col-span-3 justify-start w-full'>
+      <span class='text-balance text-sm text-white sm:text-center'>
+        Todos los derechos reservados © {currentYear} Los chamitos locos.
+      </span>
+    </div>
+  </div>
+</footer>

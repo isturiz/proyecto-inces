@@ -1,0 +1,49 @@
+---
+import Section from '@/components/SectionItem.astro'
+---
+
+<Section hasBottomMargin={true}>
+  <div slot='content'>
+    <div class='w-full'>
+      <div class="grid grid-auto md:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-8 *:*:max-h-[450px] ">
+        <div class="relative group">
+            <img src="/galeria/gallery-3.jpeg" alt="" class="w-full h-full rounded-lg object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-75">
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-75 rounded-lg">
+                <p class="text-white text-center">Texto explicativo de la imagen 1</p>
+            </div>
+        </div>
+        <div class="relative group">
+            <img src="/galeria/gallery-5.jpeg" alt="" class="w-full h-full rounded-lg object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-75">
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-75 rounded-lg">
+                <p class="text-white text-center">Texto explicativo de la imagen 2</p>
+            </div>
+        </div>
+        <div class="relative group">
+            <img src="/galeria/gallery-7.jpeg" alt="" class="w-full h-full rounded-lg object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-75">
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-75 rounded-lg">
+                <p class="text-white text-center">Primera inspección de los equipos de la institución del INCES</p>
+            </div>
+        </div>
+        <div class="relative group">
+            <img src="/galeria/gallery-1.jpeg" alt="" class="w-full h-full rounded-lg object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-75">
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-75 rounded-lg">
+                <p class="text-white text-center">Desmontaje de los equipos</p>
+            </div>
+        </div>
+        <div class="relative group">
+            <img src="/galeria/gallery-10.jpeg" alt="" class="w-full h-full rounded-lg object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-75">
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-75 rounded-lg">
+                <p class="text-white text-center">Ensamblando los equipos luego de la realización del mantenimiento.</p>
+            </div>
+        </div>
+        <div class="relative group">
+            <img src="/galeria/gallery-2.jpeg" alt="" class="w-full h-full rounded-lg object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-75">
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-75 rounded-lg">
+                <p class="text-white text-center">Limpieza de componentes internos.</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+  </div>
+</Section>

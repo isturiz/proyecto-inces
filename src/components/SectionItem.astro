@@ -1,0 +1,47 @@
+---
+interface Props {
+  classes?: string
+  id?: string
+  bgColor?: string
+  noPadding?: boolean
+  contentPadding?: boolean
+  hasTopMargin?: boolean
+  hasBottomMargin?: boolean
+}
+
+const { classes, id, bgColor } = Astro.props
+
+let {
+  noPadding = false,
+  contentPadding = false,
+  hasTopMargin = true,
+  hasBottomMargin = false
+} = Astro.props
+
+if (noPadding) {
+  hasBottomMargin = false
+  hasTopMargin = false
+}
+---
+
+<section
+  id={id}
+  class:list={[
+    bgColor ? `bg-${bgColor}` : '',
+    noPadding ? 'p-0' : 'px-6 md:px-12 lg:px-20',
+    hasTopMargin ? 'mt-6 md:mt-12 lg:mt-20' : '',
+    hasBottomMargin ? 'mb-6 md:mb-12 lg:mb-20' : '',
+    classes ? classes : ''
+  ]}
+>
+  <slot name='top-divider' />
+  <div
+    class:list={[
+      contentPadding ? 'py-6 md:py-12 lg:py-20' : 'p-0',
+      'container mx-auto max-w-7xl'
+    ]}
+  >
+    <slot name='content' />
+  </div>
+  <slot name='bottom-divider' />
+</section>
