@@ -1,0 +1,51 @@
+---
+import Section from '@/components/SectionItem.astro'
+---
+
+
+<Section hasBottomMargin hasTopMargin={false}>
+  <div slot='content' class="py-8">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-4">Ventajas y Desventajas</h2>
+    
+      <div class="bg-white shadow-md rounded-lg overflow-auto">
+        <table class="w-full divide-y divide-gray-200">
+          <tbody class="bg-white divide-y divide-gray-200">
+            <!-- Ventajas -->
+            <tr class="bg-green-100">
+              <td class="px-6 py-4 whitespace-wrap font-semibold">Ventajas</td>
+              <td class="px-6 py-4 whitespace-wrap">
+                <ul class="list-disc">
+                  <li>Capacitación gratuita en diversas áreas.</li>
+                  <li>Ofrece certificados avalados por el estado venezolano.</li>
+                  <li>Infraestructura moderna y equipada para la formación técnica y profesional.</li>
+                  <li>Programas de formación adaptados a las necesidades del mercado laboral local.</li>
+                  <li>Posibilidad de acceso a programas de emprendimiento y desarrollo de habilidades empresariales.</li>
+                  <li>Oportunidad de establecer contactos y redes profesionales dentro de la comunidad educativa del INCES.</li>
+                  <li>Apoyo y orientación en la búsqueda de empleo después de la graduación.</li>
+                </ul>
+              </td>
+            </tr>
+    
+            <!-- Desventajas -->
+            <tr class="bg-red-100">
+              <td class="px-6 py-4 whitespace-wrap font-semibold">Desventajas</td>
+              <td class="px-6 py-4 whitespace-wrap">
+                <ul class="list-disc">
+                  <li>Limitación en la disponibilidad de cupos para algunos cursos debido a la alta demanda.</li>
+                  <li>Posibles restricciones en recursos y materiales educativos, lo que puede afectar la calidad de la enseñanza en algunos casos.</li>
+                  <li>Algunos programas pueden tener una duración más larga de lo esperado, lo que puede generar inconvenientes para los estudiantes que buscan una capacitación rápida y eficiente.</li>
+                  <li>Falta de actualización en algunos contenidos formativos, lo que puede llevar a una brecha entre los conocimientos adquiridos y las demandas del mercado laboral actual.</li>
+                  <li>Problemas de transporte y acceso para estudiantes que viven en áreas remotas o con limitaciones de movilidad.</li>
+                  <li>Posibles discrepancias entre la oferta formativa del INCES y las necesidades reales del mercado laboral local, lo que podría dificultar la inserción laboral de algunos graduados.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</Section>
+
+

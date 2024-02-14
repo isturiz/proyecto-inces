@@ -1,6 +1,7 @@
 ---
 interface Props {
   classes?: string
+  otherClass?: string
   id?: string
   bgColor?: string
   noPadding?: boolean
@@ -9,7 +10,7 @@ interface Props {
   hasBottomMargin?: boolean
 }
 
-const { classes, id, bgColor } = Astro.props
+const { classes, id, bgColor, otherClass } = Astro.props
 
 let {
   noPadding = false,
@@ -38,7 +39,7 @@ if (noPadding) {
   <div
     class:list={[
       contentPadding ? 'py-6 md:py-12 lg:py-20' : 'p-0',
-      'container mx-auto max-w-7xl'
+      'container mx-auto', otherClass ? otherClass : "max-w-xl"
     ]}
   >
     <slot name='content' />
