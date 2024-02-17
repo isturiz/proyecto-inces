@@ -1,6 +1,21 @@
 ---
 
 ---
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navbarToggle = document.querySelector('[data-collapse-toggle="navbar-default"]');
+    const navbarMenu = document.getElementById('navbar-default');
+
+    navbarToggle.addEventListener('click', function () {
+      const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+      this.setAttribute('aria-expanded', !expanded);
+      navbarMenu.classList.toggle('hidden');
+    });
+  });
+</script>
+
+
 <header class='fixed z-[40] grid h-auto w-full bg-white shadow'>
   <div class='px-6 py-3 md:px-12 lg:px-20'>
     <nav class='flex max-w-screen-xl flex-wrap items-center justify-between'>
